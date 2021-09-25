@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'HTC') }}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -22,9 +22,12 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">
-            <img src="{{ asset('images/htc.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
-            <span class="menu-collapsed">HTC</span>
+        <a class="navbar-brand d-flex justify-content-start align-items-center" href="#">
+            <img src="{{ asset('images/htc.png') }}" width="55" height="55" class="d-inline-block align-top mr-3" alt="">
+            <span class="menu-collapsed d-flex flex-column">
+                <b>{{ config('app.name', 'HTC') }}</b>
+                <b class="font-weight-normal h6 font-italic">Electronic Class Record</b>
+            </span>
         </a>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">

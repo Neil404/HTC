@@ -5,14 +5,13 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class Students extends Controller
+class Subjects extends Controller
 {
     //
     public function __construct()
     {
         $this->middleware('auth');
     }
-
     /**
      * Show the application dashboard.
      *
@@ -20,16 +19,17 @@ class Students extends Controller
      */
     public function index()
     {
-        return view('admin/students');
+        return view('admin/subjects');
     }
+
     public function editAction($id) {
         if(!is_numeric($id)) {
             return redirect('/' . $id);
         }
-        return view('admin/students/student');
+        return view('admin/subjects/subject');
     }
 
     public function addAction() {
-        return view('admin/students/student');
+        return view('admin/subjects/subject');
     }
 }

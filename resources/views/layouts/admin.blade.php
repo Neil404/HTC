@@ -7,7 +7,7 @@
             </li>
             <!-- /END Separator -->
             <!-- Menu with submenu -->
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <a href="/admin/dashboard" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
                     <span class="menu-collapsed">Dashboard</span>
@@ -43,7 +43,7 @@
                     <span class="menu-collapsed">Rankings</span>
                 </div>
             </a>
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <a href="/admin/subjects" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fab fa-hackerrank mr-3"></span>
                     <span class="menu-collapsed">Subjects</span>
@@ -59,7 +59,7 @@
                     <span class="menu-collapsed">Grades</span>
                 </div>
             </a>
-            <a href="students" class="bg-dark list-group-item list-group-item-action">
+            <a href="/admin/students" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-users mr-3"></span>
                     <span class="menu-collapsed">Students</span>
