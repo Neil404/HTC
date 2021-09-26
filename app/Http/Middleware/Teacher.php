@@ -16,7 +16,7 @@ class Teacher
      */
     public function handle(Request $request, Closure $next)
     {
-        if ($request->user() && ($request->user()->type != 'TEACHER' || $request->user()->type != 'ADVISER'))
+        if ($request->user() && ($request->user()->type != 'TEACHER'))
         {
             return back();
         }

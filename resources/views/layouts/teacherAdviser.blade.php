@@ -7,26 +7,26 @@
             </li>
             <!-- /END Separator -->
             <!-- Menu with submenu -->
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <!-- <a href="#" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fab fa-watchman-monitoring mr-3"></span>
                     <span class="menu-collapsed">Monitor Grades</span>
                 </div>
-            </a>
+            </a> -->
             <!-- Separator with title -->
             <!-- <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
                 <small>OPTIONS</small>
             </li> -->
             <!-- /END Separator -->
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <!-- <a href="#" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-medal mr-3"></span>
                     <span class="menu-collapsed">Rankings</span>
                 </div>
-            </a>
+            </a> -->
 
 
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <a href="/teacher/ratings" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-star-half-alt mr-3"></span>
                     <span class="menu-collapsed">View Rating</span>
@@ -36,7 +36,7 @@
             <!-- Separator without title -->
             <!-- <li class="list-group-item sidebar-separator menu-collapsed"></li> -->
             <!-- /END Separator -->
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <!-- <a href="#" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="far fa-edit mr-3"></span>
                     <span class="menu-collapsed">Written Works</span>
@@ -52,6 +52,12 @@
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-pen-nib fa-fw mr-3"></span>
                     <span class="menu-collapsed">Exam</span>
+                </div>
+            </a> -->
+            <a href="/teacher/grades" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fas fa-pen-nib fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Input Grades</span>
                 </div>
             </a>
             <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">

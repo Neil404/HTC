@@ -10,7 +10,7 @@
             <th scope="col">Written Works Percentage</th>
             <th scope="col">Performace Tasks Percentage</th>
             <th scope="col">Exam Percentage</th>
-            <th scope="col">Assign</th>
+            <th scope="col">Assign Subject</th>
             <th scope="col">Action</th>
             </tr>
         </thead>

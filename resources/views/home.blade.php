@@ -18,6 +18,8 @@
                     <!-- {{Auth::user()}} -->
                     @if (Auth::user()->type == 'ADMIN')
                         {{__('YOU ARE LOGGED IN AS ADMIN')}}
+                    @elseif(Auth::user()->type == 'TEACHER')
+                    {{__('YOU ARE LOGGED IN AS TEACHER')}}
                     @endif
                 </div>
             </div>

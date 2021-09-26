@@ -24,9 +24,13 @@ class HomeController extends Controller
      */
     public function index()
     {
+        \Log::info('USER TYPE: '. Auth::user()->type);
         if (Auth::user() && Auth::user()->type == 'ADMIN')
         {
             return redirect('admin/dashboard');
+        }else if (Auth::user() && Auth::user()->type == 'TEACHER')
+        {
+            return redirect('teacher/grades');
         }
         return view('home');
     }

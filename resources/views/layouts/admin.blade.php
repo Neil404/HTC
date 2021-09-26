@@ -53,7 +53,7 @@
             <!-- Separator without title -->
             <!-- <li class="list-group-item sidebar-separator menu-collapsed"></li> -->
             <!-- /END Separator -->
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <a href="/admin/grades" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-star mr-3"></span>
                     <span class="menu-collapsed">Grades</span>

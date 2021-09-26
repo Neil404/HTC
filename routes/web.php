@@ -33,10 +33,13 @@ Route::group(['middleware' => 'App\Http\Middleware\Admin', 'prefix' => 'admin'],
     Route::get('/subjects', [App\Http\Controllers\Admin\Subjects::class, 'index'])->name('subjects');
     Route::get('/subject/edit/{id}', [App\Http\Controllers\Admin\Subjects::class, 'editAction']);
     Route::get('/subject/add', [App\Http\Controllers\Admin\Subjects::class, 'addAction'])->name('addSubject');
+
+    Route::get('/grades', [App\Http\Controllers\Admin\Grades::class, 'index']);
 });
 
-Route::group(['middleware' => 'App\Http\Middleware\Teacher'], function()
+Route::group(['middleware' => 'App\Http\Middleware\Teacher', 'prefix' => 'teacher'], function()
 {
-    // Route::get('/students', [App\Http\Controllers\Admin\Students::class, 'index'])->name('students');
+    Route::get('/grades', [App\Http\Controllers\Teacher\Grades::class, 'index']);
+    Route::get('/ratings', [App\Http\Controllers\Teacher\Grades::class, 'ratings']);
 });
 
