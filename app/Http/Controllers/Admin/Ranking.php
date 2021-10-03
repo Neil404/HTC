@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class Grades extends Controller
+class Ranking extends Controller
 {
     public function __construct()
     {
@@ -22,18 +22,22 @@ class Grades extends Controller
     }
     public function first()
     {
-        return view('admin/grades');
+        return view('admin/ranking/rankingByGrading');
     }
     public function second()
     {
-        return view('admin/grades');
+        return view('admin/ranking/rankingByGrading');
     }
     public function third()
     {
-        return view('admin/grades');
+        return view('admin/ranking/rankingByGrading');
     }
     public function fourth()
     {
-        return view('admin/grades');
+        return view('admin/ranking/rankingByGrading');
+    }
+    public function end()
+    {
+        return view('admin/ranking/rankingByGrading');
     }
 }
