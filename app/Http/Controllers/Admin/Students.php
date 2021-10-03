@@ -21,7 +21,9 @@ class Students extends Controller
      */
     public function index()
     {
-        return view('admin/students');
+
+        $students = Student::get();
+        return view('admin/students', compact('students'));
     }
     public function editAction($id) {
         if(!is_numeric($id)) {
