@@ -1,16 +1,17 @@
 @extends('layouts.app')
 @section('content')
     <a href="/admin/subject/add">
-        <button type="button" class="btn btn-success">Add Subject</button>
+        <button type="button" class="btn btn-primary"> + Add Subject</button>
     </a>
     <table class="table mt-4">
         <thead class="thead-light">
             <tr>
             <th scope="col">Subject Title</th>
-            <th scope="col">Written Works Percentage</th>
-            <th scope="col">Performace Tasks Percentage</th>
-            <th scope="col">Exam Percentage</th>
-            <th scope="col">Assign Subject</th>
+            <th scope="col">Written Works (%)</th>
+            <th scope="col">Performace Tasks (%)</th>
+            <th scope="col">Exam (%)</th>
+            <th scope="col">SY</th>
+            <th scope="col">Grading Period</th>
             <th scope="col">Action</th>
             </tr>
         </thead>
@@ -20,7 +21,9 @@
                 <td>10%</td>
                 <td>60%</td>
                 <td>50%</td>
-                <td>
+                <td>2021 - 2022</td>
+                <td>First Grading</td>
+                {{-- <td>
                     <form>
                         <select type="button" class="form-control border border-danger pt-0 rounded-1 pb-0" name="gender" id="gender" style="height: 25px;" onchange="(function(){
                             $('#assign').click();
@@ -31,7 +34,7 @@
                         </select>
                         <input type="submit" id="assign" name="submit" value="Submit" style="display: none;">
                     </form>
-                </td>
+                </td> --}}
                 <td class="d-flex">
                     <button
                         class="btn btn-light"

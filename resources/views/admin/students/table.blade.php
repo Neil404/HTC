@@ -1,42 +1,3 @@
-<?php
-    $datas = [
-      [
-        'firstname' => 'John',
-        'lastname' => 'Doe',
-        'middlename' => 'Carabao',
-        'age' => 23,
-        'gender' => 'Male'
-      ],
-      [
-        'firstname' => 'Steven',
-        'lastname' => 'Jobs',
-        'middlename' => 'Paul',
-        'age' => 27,
-        'gender' => 'Male'
-      ], 
-      [
-        'firstname' => 'John',
-        'lastname' => 'Steven',
-        'middlename' => 'Doe',
-        'age' => 23,
-        'gender' => 'Male'
-      ], 
-      [
-        'firstname' => 'Kagura',
-        'lastname' => 'Haya',
-        'middlename' => 'Umbre',
-        'age' => 19,
-        'gender' => 'Female'
-      ], 
-      [
-        'firstname' => 'Oddette',
-        'lastname' => 'Lance',
-        'middlename' => 'Ode',
-        'age' => 24,
-        'gender' => 'Female'
-      ], 
-    ];
-?>
 <table class="table mt-3">
     <thead class="thead-light">
         <tr>
@@ -49,7 +10,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach($datas as $data)
+        @foreach($students as $data)
         <tr>
             <td>{{$data['firstname']}}</td>
             <td>{{$data['lastname']}}</td>
@@ -60,7 +21,7 @@
               <button
                 class="btn btn-light"
                 onclick="(function(){
-                    window.location.href = '/admin/student/edit/1'
+                    window.location.href = '/admin/student/edit/{{$data['id']}}'
                 })()">
                   <i class="fas fa-pencil-alt text-success"></i>
               </button>
