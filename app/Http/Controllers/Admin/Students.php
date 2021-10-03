@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Student;
 
 class Students extends Controller
 {
@@ -20,7 +21,9 @@ class Students extends Controller
      */
     public function index()
     {
-        return view('admin/students');
+
+        $students = Student::get();
+        return view('admin/students', compact('students'));
     }
     public function editAction($id) {
         if(!is_numeric($id)) {
@@ -31,5 +34,12 @@ class Students extends Controller
 
     public function addAction() {
         return view('admin/students/student');
+    }
+
+    public function create(Request $request) {
+        // ['firstname', 'lastname', 'middlename', 'age', 'yearlevel', 'gender'];
+        // lacking with validations yet
+        $student = Student::create($request->all());
+        return view('admin/students/student', $student);
     }
 }
